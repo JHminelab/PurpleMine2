@@ -46,12 +46,12 @@ a.collapsible.collapsed,
 @if $collapsible-animation-time > 0 {
   fieldset.collapsible {
     min-height: $line-height-computed;
-    max-height: 2500px; // should be enough with all the possible filters
+    // max-height: 2500px; // should be enough with all the possible filters
     overflow: hidden;
     transition: max-height $collapsible-animation-time ease-out;
 
     > div {
-      display: block !important; // scss-lint:disable ImportantRule
+      // display: block !important; // scss-lint:disable ImportantRule
       visibility: visible;
       transition: visibility 0s 0s, opacity $collapsible-animation-time;
       opacity: 1;
